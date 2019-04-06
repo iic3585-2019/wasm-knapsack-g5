@@ -1,53 +1,23 @@
-# 🦀🕸️ `wasm-pack-template`
+# Tarea 3: Web Assembly
 
-A template for kick starting a Rust and WebAssembly project using
-[`wasm-pack`](https://github.com/rustwasm/wasm-pack).
+## Integrantes
+- Francisco Olivares
+- Gabriel Valenzuela
 
-[**📚 Read this template tutorial! 📚**][template-docs]
+### Pre-requisitos
+- Node
+- Rust Tool Chain
+- wasm-pack
 
-This template is designed for compiling Rust libraries into WebAssembly and
-publishing the resulting package to NPM.
+Para más info de los requisitos visitar el [siguiente enlace](https://rustwasm.github.io/docs/book/game-of-life/setup.html)
 
-Be sure to check out [other `wasm-pack` tutorials online][tutorials] for other
-templates and usages of `wasm-pack`.
+Instrucciones para correr el código
 
-[tutorials]: https://rustwasm.github.io/docs/wasm-pack/tutorials/index.html
-[template-docs]: https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html
+1. Ejecute `npm install` en la carpeta `www`
+2. Ejecute el comando `npm run start` y dirigase a la url `http://localhost:8080/`
 
-## 🚴 Usage
 
-### 🐑 Use `cargo generate` to Clone this Template
-
-[Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
-
-```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name my-project
-cd my-project
-```
-
-### 🛠️ Build with `wasm-pack build`
-
+En caso de hacer alguna modificación al código rust (`src/lib.rs`) se deberá volver a compilar el código con el comando:
 ```
 wasm-pack build
 ```
-
-### 🔬 Test in Headless Browsers with `wasm-pack test`
-
-```
-wasm-pack test --headless --firefox
-```
-
-### 🎁 Publish to NPM with `wasm-pack publish`
-
-```
-wasm-pack publish
-```
-
-## 🔋 Batteries Included
-
-* [`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen) for communicating
-  between WebAssembly and JavaScript.
-* [`console_error_panic_hook`](https://github.com/rustwasm/console_error_panic_hook)
-  for logging panic messages to the developer console.
-* [`wee_alloc`](https://github.com/rustwasm/wee_alloc), an allocator optimized
-  for small code size.
