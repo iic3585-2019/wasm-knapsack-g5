@@ -23,7 +23,9 @@ const ITEMS = [
     }
 ]
 
-let knapsack = wasm.Knapsack.new()
+const MAX_WEIGHT = 15
+
+let knapsack = wasm.Knapsack.new(MAX_WEIGHT)
 
 ITEMS.forEach((item) => {
     knapsack.append_item(wasm.Item.new(item.id, item.name, item.value, item.weight))
