@@ -1,0 +1,29 @@
+<html lang=en-us>
+    <head>
+        <title>Solver</title>
+    </head>
+    <body>
+    <div>
+        <legend>Ingrese los valores:</legend>
+        <label ></label>
+        <input type="text" id="A">
+        <label >X+</label>
+        <input type="text" id="B">
+        <label >+</label>
+        <input type="text" id="C">
+        <label > = 0</label>
+        <br><br>
+        <input type="button" onclick="Calcular();" value="Calcular">
+    </div>
+    </body>
+    <script>
+        function Calcular() {
+            var a = document.getElementById('A').value;
+            var b = document.getElementById('B').value;
+            var c = document.getElementById('C').value;
+            var resultado = _equation(a,b,c);
+            alert("El resultado es: "+resultado)
+        }
+    </script>
+    <script async src=solver.js></script>
+</html>
