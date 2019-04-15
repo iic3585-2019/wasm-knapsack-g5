@@ -1,4 +1,5 @@
-import * as wasm from "wasm-game-of-life";
+//import * as wasm from "wasm-game-of-life";
+import * as wasm from "knapsack-problem";
 
 const ITEMS = [
     {
