@@ -1,4 +1,4 @@
-# Tarea 3: Web Assembly
+# Tarea 3: Web Assembly: Knapsack Problem
 
 ## Integrantes
 - Francisco Olivares
