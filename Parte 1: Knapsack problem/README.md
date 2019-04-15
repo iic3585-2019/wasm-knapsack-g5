@@ -24,3 +24,12 @@ En caso de hacer alguna modificación al código rust (`src/lib.rs`) se deberá 
 ```
 wasm-pack build
 ```
+
+### Comentarios
+
+El problema que se busca resolver es el Knapsack problem binario. El enfoque de la solución es busqueda sobre todo el espacio de solución, es decir todas las combinaciones posibles.
+
+El código más relevante está en las funciones/métodos
+- `solve_it`: Inicia el proceso de busqueda en el espacio de soluciones
+- `get_binary`: Transforma un número decimal en un vector de true o false que representa el número en binario
+- `evaluate`: Dado un vector de items seleccionados (vector de true o false) calcula cuanto valor aporta la mochila
